@@ -1,0 +1,114 @@
+<html>
+<head>
+    <title>My Personal Website</title>
+    <style>
+        /* Add your CSS styles here */
+        body {
+            font-family: Arial, sans-serif;
+            background-color: lightblue;
+        }
+        h1 {
+            text-align: center;
+            color: white;
+        }
+        .container {
+            width: 80%;
+            margin: auto;
+        }
+        .section {
+            border: 1px solid black;
+            padding: 10px;
+            margin: 10px;
+        }
+        .bio {
+            display: flex;
+            align-items: center;
+        }
+        .bio img {
+            width: 200px;
+            height: 200px;
+            border-radius: 50%;
+            margin-right: 20px;
+        }
+        .bio p {
+            font-size: 18px;
+        }
+        .resume {
+            display: grid;
+            grid-template-columns: 1fr 2fr;
+            gap: 10px;
+        }
+        .resume h2 {
+            grid-column: span 2;
+        }
+        .resume h3 {
+            font-weight: bold;
+        }
+        .resume ul {
+            list-style: none;
+            margin: 0;
+            padding: 0;
+        }
+        .resume li {
+            margin-bottom: 5px;
+        }
+        .contact {
+            display: flex;
+            justify-content: space-around;
+        }
+        .contact a {
+            text-decoration: none;
+            color: black;
+            font-size: 20px;
+        }
+    </style>
+</head>
+<body>
+    <h1>My Personal Website</h1>
+    <div class="container">
+        <div class="section bio">
+            <img src="your_photo.jpg" alt="Your photo">
+            <p>
+                Hi, I'm John Doe, a web developer and a hobbyist photographer. I love creating beautiful and functional websites using HTML, Javascript, and CSS. I also enjoy taking photos of nature, animals, and people. This is my personal website where you can find more about me, my resume, and my contact details.
+            </p>
+        </div>
+        <div class="section resume">
+            <h2>Resume</h2>
+            <h3>Education</h3>
+            <ul>
+                <li>Bachelor of Science in Computer Science, University of XYZ, 2019 - 2023</li>
+                <li>High School Diploma, ABC High School, 2015 - 2019</li>
+            </ul>
+            <h3>Skills</h3>
+            <ul>
+                <li>HTML, CSS, Javascript, jQuery, Bootstrap, React</li>
+                <li>PHP, MySQL, Node.js, Express, MongoDB</li>
+                <li>Git, GitHub, VS Code, Photoshop, Lightroom</li>
+            </ul>
+            <h3>Projects</h3>
+            <ul>
+                <li><a href="https://example.com/project1">Project 1</a>: A responsive website for a fictional company using HTML, CSS, and Bootstrap</li>
+                <li><a href="https://example.com/project2">Project 2</a>: A dynamic web application for a todo list using Javascript, jQuery, and Node.js</li>
+                <li><a href="https://example.com/project3">Project 3</a>: A single-page web app for a weather forecast using React and an API</li>
+            </ul>
+            <h3>Experience</h3>
+            <ul>
+                <li>Web Developer Intern, XYZ Inc., Jan 2023 - Apr 2023</li>
+                <li>Web Developer Volunteer, ABC NGO, Sep 2022 - Dec 2022</li>
+                <li>Freelance Web Developer, Jun 2020 - Present</li>
+            </ul>
+            <h3>Awards</h3>
+            <ul>
+                <li>First Prize, Web Design Competition, University of XYZ, 2022</li>
+                <li>Second Prize, Hackathon, ABC Tech Event, 2021</li>
+                <li>Best Portfolio, Web Development Course, Online Learning Platform, 2020</li>
+            </ul>
+        </div>
+        <div class="section contact">
+            <a href="mailto:john.doe@example.com">Email</a>
+            <a href="https://www.linkedin.com/in/john-doe">LinkedIn</a>
+            <a href="https://www.github.com/john-doe">GitHub</a>
+        </div>
+    </div>
+</body>
+</html>
