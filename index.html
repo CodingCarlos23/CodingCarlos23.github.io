@@ -3,74 +3,113 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Your GitHub Page</title>
+  <title>Your Name - Home</title>
   <style>
     body {
-      display: flex;
-      flex-direction: column;
-      align-items: center;
-      justify-content: center;
-      height: 100vh;
       margin: 0;
-      background-color: #f4f4f4;
+      padding: 0;
+      font-family: 'Arial', sans-serif;
+      background-color: #22092C;
+      color: #fff;
     }
 
     header {
-      background-color: #333;
-      padding: 15px;
+      position: relative;
+      background: linear-gradient(to right, #872341, #BE3144, #F05941);
       text-align: center;
+      padding: 20px;
     }
 
-    header a {
-      color: white;
-      text-decoration: none;
-      margin: 0 15px;
-      font-size: 18px;
+    h1 {
+      margin: 0;
+      font-size: 3em;
+    }
+
+    section {
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      padding: 40px;
     }
 
     img {
-      width: 500px;
-      height: 500px;
-      border-radius: 8px;
-      margin-bottom: 20px;
+      width: 150px;
+      border-radius: 50%;
     }
 
-    .button-container {
-      display: flex;
+    p {
+      max-width: 500px;
+      font-size: 1.2em;
+    }
+
+    .skills {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
       gap: 20px;
+      margin-top: 20px;
     }
 
-    .button {
-      padding: 15px 30px;
-      font-size: 18px;
+    .skill-box {
       text-align: center;
-      text-decoration: none;
-      color: #fff;
-      background-color: #007bff;
-      border: 2px solid #007bff;
-      border-radius: 8px;
-      cursor: pointer;
-      transition: background-color 0.3s, color 0.3s;
     }
 
-    .button:hover {
-      background-color: #0056b3;
-      border-color: #0056b3;
+    .skill-icon {
+      font-size: 2em;
     }
   </style>
 </head>
 <body>
   <header>
-    <a href="index.html">Home</a>
-    <a href="page1.html">Page 1</a>
-    <a href="page2.html">Page 2</a>
-    <a href="page3.html">Page 3</a>
-    <a href="snake.html">Snake </a>
+    <h1>Your Name</h1>
   </header>
-  <img src="Grid_Tech.jfif" alt="Placeholder Image">
-  <div class="button-container">
-    <a class="button" href="#">Button 1</a>
-    <a class="button" href="#">Button 2</a>
-  </div>
+
+  <section>
+    <img src="your-profile-picture.jpg" alt="Your Profile Picture">
+    <p>
+      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, dui eu malesuada hendrerit,
+      erat libero tristique metus, eget tincidunt orci libero nec dolor. Nulla facilisi.
+    </p>
+
+    <div class="skills">
+      <div class="skill-box">
+        <div class="skill-icon">🗡️</div>
+        Skill 1
+      </div>
+      <div class="skill-box">
+        <div class="skill-icon">🗡️</div>
+        Skill 2
+      </div>
+      <div class="skill-box">
+        <div class="skill-icon">🗡️</div>
+        Skill 3
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-icon">🗡️</div>
+        Skill 4
+      </div>
+      <div class="skill-box">
+        <div class="skill-icon">🗡️</div>
+        Skill 5
+      </div>
+      <div class="skill-box">
+        <div class="skill-icon">🗡️</div>
+        Skill 6
+      </div>
+
+      <div class="skill-box">
+        <div class="skill-icon">🗡️</div>
+        Skill 7
+      </div>
+      <div class="skill-box">
+        <div class="skill-icon">🗡️</div>
+        Skill 8
+      </div>
+      <div class="skill-box">
+        <div class="skill-icon">🗡️</div>
+        Skill 9
+      </div>
+    </div>
+  </section>
 </body>
 </html>
