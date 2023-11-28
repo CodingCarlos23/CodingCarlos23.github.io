@@ -27,6 +27,8 @@
 
     section {
       display: flex;
+      flex-wrap: wrap;
+      justify-content: center;
       align-items: center;
       padding: 40px;
     }
@@ -34,12 +36,14 @@
     img {
       width: 150px;
       border-radius: 50%;
-      margin-right: 20px; /* Added margin to separate the image from the paragraph */
+      margin-right: 20px;
+      margin-bottom: 20px; /* Added margin to separate the image and the paragraph */
     }
 
     p {
       max-width: 500px;
       font-size: 1.2em;
+      flex: 1; /* Added flex property to make the paragraph flexible */
     }
 
     .skills {
@@ -106,10 +110,4 @@
         Skill 8
       </div>
       <div class="skill-box">
-        <div class="skill-icon">🗡️</div>
-        Skill 9
-      </div>
-    </div>
-  </section>
-</body>
-</html>
+       
