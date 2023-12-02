@@ -2,34 +2,10 @@
 <html>
 <head>
   <meta charset="utf-8">
-  <title>Random Object Rotating</title>
-  <script src="https://cdn.jsdelivr.net/npm/@splinetool/runtime@0.1.0/dist/spline-runtime.min.js"></script>
-  <script src="https://cdn.jsdelivr.net/npm/@splinetool/react-spline@0.1.0/dist/react-spline.min.js"></script>
-  <style>
-    #spline-container {
-      width: 100%;
-      height: 100%;
-      position: absolute;
-      top: 0;
-      left: 0;
-    }
-  </style>
+  <title>Spline Viewer Example</title>
+  <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
 </head>
 <body>
-  <div id="spline-container"></div>
-  <script>
-    const scenes = [
-      'https://prod.spline.design/xugoJlK31Q2l8yK8/scene.splinecode',
-      'https://prod.spline.design/xugoJlK31Q2l8yK8/scene.splinecode',
-      'https://prod.spline.design/scene3.splinecode'
-    ];
-    const randomScene = scenes[Math.floor(Math.random() * scenes.length)];
-    const App = () => {
-      return (
-        <Spline scene={randomScene} />
-      );
-    };
-    ReactDOM.render(<App />, document.getElementById('spline-container'));
-  </script>
+  <spline-viewer url="https://prod.spline.design/UWoeqiir20o49Dah/scene.splinecode"></spline-viewer>
 </body>
 </html>
