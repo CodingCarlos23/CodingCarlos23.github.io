@@ -2,8 +2,10 @@
 <html lang="en">
 
 <head>
+  <title>Carlos Deleon</title>
   <meta charset="UTF-8">
   <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
+  <script type="module" src="https://threejsfundamentals.org/threejs/resources/threejs/r125/build/three.module.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name - Home</title>
   <style>
@@ -117,6 +119,50 @@
       height: 100%;
       border: none;
     }
+
+    
+    footer {
+            background-color: #872341;
+            color: #fff;
+            padding: 20px 0;
+        }
+
+        .footer-container {
+            display: flex;
+            justify-content: space-between;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .footer-column {
+            width: 30%; /* Adjust the width as needed */
+        }
+
+        .footer-column h2 {
+            font-size: 1.2em;
+            margin-bottom: 10px;
+        }
+
+        .footer-links {
+            list-style: none;
+            padding: 0;
+            margin: 0;
+        }
+
+        .footer-links li {
+            margin-bottom: 8px;
+        }
+
+        .footer-social {
+            display: flex;
+            gap: 10px;
+        }
+
+        .footer-social a {
+            color: #fff;
+            text-decoration: none;
+            font-size: 1.2em;
+        }
   </style>
 </head>
 
@@ -199,12 +245,8 @@
     </div>
   </section>
 
-  <p>
-    This is a paragraph under the header. You can put your content here.
-  </p>
-
   <!-- Box -->
-  <section style="background-color: rgb(17, 176, 12); padding: 20px; border-radius: 20px; margin-top: 20px; width: 25%; margin: 0 auto;">
+  <section style="background-color: rgb(17, 176, 12); padding: 20px; border-radius: 20px; margin-top: 20px; width: 25%; margin: 0 auto; padding-bottom: 20px; margin-bottom: 40px;">
     <h2>Contact Me</h2>
     <p>
       Thank you for visiting my website! If you have any questions or would like to get in touch, feel free to reach out to me.
@@ -215,9 +257,83 @@
     </p>
   </section>
 
-</body>
+  <!-- 3D Cube-->
+  <section>
+  <script type="module">
+    // Your Three.js code goes here
+    import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r125/build/three.module.js';
 
+    // Set up scene
+    const scene = new THREE.Scene();
+
+    // Set up camera
+    const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000); // Aspect ratio set to 1 for a square viewport
+    camera.position.z = 5;
+
+    // Set up renderer
+    const renderer = new THREE.WebGLRenderer();
+    renderer.setSize(100, 100); // Set renderer size to 100x100
+    document.body.appendChild(renderer.domElement);
+
+    // Create cube
+    const geometry = new THREE.BoxGeometry();
+    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+    const cube = new THREE.Mesh(geometry, material);
+
+    // Add cube to the scene
+    scene.add(cube);
+
+    // Animation
+    const animate = function () {
+      requestAnimationFrame(animate);
+
+      // Rotate the cube
+      cube.rotation.x += 0.01;
+      cube.rotation.y += 0.01;
+
+      renderer.render(scene, camera);
+    };
+
+    // Start the animation loop
+    animate();
+  </script>
+  </section>
+
+  <!-- Footer -->
+  <footer>
+    <div class="footer-container">
+      <div class="footer-column">
+        <h2>Column 1</h2>
+        <ul class="footer-links">
+          <li><a href="#">Link 1</a></li>
+          <li><a href="#">Link 2</a></li>
+          <li><a href="#">Link 3</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>Column 2</h2>
+        <ul class="footer-links">
+          <li><a href="#">Link 4</a></li>
+          <li><a href="#">Link 5</a></li>
+          <li><a href="#">Link 6</a></li>
+        </ul>
+      </div>
+      <div class="footer-column">
+        <h2>Column 3</h2>
+        <div class="footer-social">
+          <a href="#" target="_blank">Facebook</a>
+          <a href="#" target="_blank">Twitter</a>
+          <a href="#" target="_blank">Instagram</a>
+        </div>
+      </div>
+    </div>
+  </footer>
+
+  <!-- Include your JavaScript scripts or links to external scripts here -->
+
+</body>
 </html>
+
 <!-- Plans, 3D model in background, have skills be cube 3d models with the logo one it, resume page regular, about me, photo with me, 
 2nd site page for just projects, school projects, bnl project, crater project
 3rd site page my skills and experiance more in detail
