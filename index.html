@@ -4,11 +4,25 @@
 <head>
   <title>Carlos Deleon</title>
   <meta charset="UTF-8">
+  <!-- Include Friconix -->
+  <script defer src="https://friconix.com/cdn/friconix.js"> </script>
   <script type="module" src="https://unpkg.com/@splinetool/viewer/build/spline-viewer.js"></script>
-  <script type="module" src="https://threejsfundamentals.org/threejs/resources/threejs/r125/build/three.module.js"></script>
+  <script type="module"
+    src="https://threejsfundamentals.org/threejs/resources/threejs/r125/build/three.module.js"></script>
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Your Name - Home</title>
   <style>
+    .styled-box {
+      background-color: #806989cc; /* Hex color with transparency */
+      /* Transparent white background */
+      border: 2px solid #22092C;
+      /* Border color (blue in this example) */
+      border-radius: 10px;
+      /* Border radius for curved edges */
+      padding: 20px;
+      /* Padding inside the box */
+    }
+
     body {
       margin: 0;
       padding: 0;
@@ -120,67 +134,68 @@
       border: none;
     }
 
-    
+
     footer {
-            background-color: #872341;
-            color: #fff;
-            padding: 20px 0;
-        }
+      background-color: #872341;
+      color: #fff;
+      padding: 20px 0;
+    }
 
-        .footer-container {
-            display: flex;
-            justify-content: space-between;
-            max-width: 1200px;
-            margin: 0 auto;
-        }
+    .footer-container {
+      display: flex;
+      justify-content: space-between;
+      max-width: 1200px;
+      margin: 0 auto;
+    }
 
-        .footer-column {
-            width: 30%; /* Adjust the width as needed */
-        }
+    .footer-column {
+      width: 30%;
+      /* Adjust the width as needed */
+    }
 
-        .footer-column h2 {
-            font-size: 1.2em;
-            margin-bottom: 10px;
-        }
+    .footer-column h2 {
+      font-size: 1.2em;
+      margin-bottom: 10px;
+    }
 
-        .footer-links {
-            list-style: none;
-            padding: 0;
-            margin: 0;
-        }
+    .footer-links {
+      list-style: none;
+      padding: 0;
+      margin: 0;
+    }
 
-        .footer-links li {
-            margin-bottom: 8px;
-        }
+    .footer-links li {
+      margin-bottom: 8px;
+    }
 
-        .footer-social {
-            display: flex;
-            gap: 10px;
-        }
+    .footer-social {
+      display: flex;
+      gap: 10px;
+    }
 
-        .footer-social a {
-            color: #fff;
-            text-decoration: none;
-            font-size: 1.2em;
-        }
+    .footer-social a {
+      color: #fff;
+      text-decoration: none;
+      font-size: 1.2em;
+    }
   </style>
 </head>
 
 <body>
   <header>
-    <h1>Your Name</h1>
+    <h1>Carlos Deleon</h1>
   </header>
 
   <section>
-    <img src="your-profile-picture.jpg" alt="Your Profile Picture">
-    <p>
-      Lorem ipsum dolor sit amet, consectetur adipiscing elit. Proin euismod, dui eu malesuada hendrerit,
-      erat libero tristique metus, eget tincidunt orci libero nec dolor. Nulla facilisi.
-    </p>
+    <img src="Carlos.jpg" alt="Carlos Profile Picture">
 
-    <a href="3D_Testing.html" class="button">
-      Click me
-    </a>
+    <div class="styled-box">
+      <p>
+        Hi my name is Carlos. I am currently attending suffolik county community college for my computer science associates degree.
+        I like all things technology, coding, Data analysis
+        SPELL CHECK
+      </p>
+    </div>
 
   </section>
 
@@ -189,17 +204,17 @@
 
     <div class="skills">
       <div class="skill-box">
-        <div class="skill-icon">🗡️</div>
+        <div class="skill-icon"><i class="fi-xnluxl-java"></i></div>
         Skill 1
-      </div>
-      <div class="skill-box">
-        <div class="skill-icon">🗡️</div>
+    </div>
+    <div class="skill-box">
+        <div class="skill-icon"><i class="fi-xnsuxl-python"></i></div>
         Skill 2
-      </div>
-      <div class="skill-box">
-        <div class="skill-icon">🗡️</div>
+    </div>
+    <div class="skill-box">
+        <div class="skill-icon"><i class="fi-cnsuxl-cpp"></i></div>
         Skill 3
-      </div>
+    </div>
 
       <div class="skill-box">
         <div class="skill-icon">🗡️</div>
@@ -246,10 +261,25 @@
   </section>
 
   <!-- Box -->
-  <section style="background-color: rgb(17, 176, 12); padding: 20px; border-radius: 20px; margin-top: 20px; width: 25%; margin: 0 auto; padding-bottom: 20px; margin-bottom: 40px;">
+  <section
+    style="background-color: rgb(17, 176, 12); padding: 20px; border-radius: 20px; margin-top: 20px; width: 25%; margin: 0 auto; padding-bottom: 20px; margin-bottom: 40px;">
     <h2>Contact Me</h2>
     <p>
-      Thank you for visiting my website! If you have any questions or would like to get in touch, feel free to reach out to me.
+      Thank you for visiting my website! If you have any questions or would like to get in touch, feel free to reach out
+      to me.
+    </p>
+    <p>
+      Email: your.email@example.com<br>
+      Phone: (123) 456-7890
+    </p>
+  </section>
+
+  <!-- Projects-->
+  <section
+    style="background-color: rgb(17, 176, 12); padding: 20px; border-radius: 20px; margin-top: 20px; width: 25%; margin: 0 auto; padding-bottom: 20px; margin-bottom: 40px;">
+    <h2>Projects</h2>
+    <p>
+      talk about projects here
     </p>
     <p>
       Email: your.email@example.com<br>
@@ -259,44 +289,44 @@
 
   <!-- 3D Cube-->
   <section>
-  <script type="module">
-    // Your Three.js code goes here
-    import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r125/build/three.module.js';
+    <script type="module">
+      // Your Three.js code goes here
+      import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r125/build/three.module.js';
 
-    // Set up scene
-    const scene = new THREE.Scene();
+      // Set up scene
+      const scene = new THREE.Scene();
 
-    // Set up camera
-    const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000); // Aspect ratio set to 1 for a square viewport
-    camera.position.z = 5;
+      // Set up camera
+      const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000); // Aspect ratio set to 1 for a square viewport
+      camera.position.z = 5;
 
-    // Set up renderer
-    const renderer = new THREE.WebGLRenderer();
-    renderer.setSize(100, 100); // Set renderer size to 100x100
-    document.body.appendChild(renderer.domElement);
+      // Set up renderer
+      const renderer = new THREE.WebGLRenderer();
+      renderer.setSize(100, 100); // Set renderer size to 100x100
+      document.body.appendChild(renderer.domElement);
 
-    // Create cube
-    const geometry = new THREE.BoxGeometry();
-    const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
-    const cube = new THREE.Mesh(geometry, material);
+      // Create cube
+      const geometry = new THREE.BoxGeometry();
+      const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+      const cube = new THREE.Mesh(geometry, material);
 
-    // Add cube to the scene
-    scene.add(cube);
+      // Add cube to the scene
+      scene.add(cube);
 
-    // Animation
-    const animate = function () {
-      requestAnimationFrame(animate);
+      // Animation
+      const animate = function () {
+        requestAnimationFrame(animate);
 
-      // Rotate the cube
-      cube.rotation.x += 0.01;
-      cube.rotation.y += 0.01;
+        // Rotate the cube
+        cube.rotation.x += 0.01;
+        cube.rotation.y += 0.01;
 
-      renderer.render(scene, camera);
-    };
+        renderer.render(scene, camera);
+      };
 
-    // Start the animation loop
-    animate();
-  </script>
+      // Start the animation loop
+      animate();
+    </script>
   </section>
 
   <!-- Footer -->
@@ -332,6 +362,7 @@
   <!-- Include your JavaScript scripts or links to external scripts here -->
 
 </body>
+
 </html>
 
 <!-- Plans, 3D model in background, have skills be cube 3d models with the logo one it, resume page regular, about me, photo with me, 
