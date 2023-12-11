@@ -32,16 +32,16 @@
   renderer.setSize(500, 500);
   document.body.appendChild(renderer.domElement);
 
-  // Load Python logo texture
+  // Load texture
   const textureLoader = new THREE.TextureLoader();
-  const texture = textureLoader.load('path/to/python_logo.png'); // Replace with the actual path to the Python logo image
+  const texture = textureLoader.load('https://threejsfundamentals.org/threejs/resources/images/wall.jpg'); // Example texture
   texture.wrapS = THREE.RepeatWrapping;
   texture.wrapT = THREE.RepeatWrapping;
-  texture.repeat.set(1, 1);
+  texture.repeat.set(1, 1); // Number of times to repeat the texture
 
   const material = new THREE.MeshBasicMaterial({ map: texture });
 
-  // Create cube with Python logo texture
+  // Create cube with texture
   const geometry = new THREE.BoxGeometry();
   const cube = new THREE.Mesh(geometry, material);
   cube.rotation.x = 0.5; // Initial tilt
