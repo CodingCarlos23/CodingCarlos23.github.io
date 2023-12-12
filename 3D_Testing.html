@@ -21,38 +21,63 @@
 
   // Create scene with white background
   const scene = new THREE.Scene();
-  scene.background = new THREE.Color(0xffffff);
+  scene.background = new THREE.Color(0xAffffA);
 
   // Create camera
   const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
   camera.position.z = 5;
-
+  camera.position.y = 0; // Adjust the Y-coordinate to shift the perspective up
   // Create renderer
   const renderer = new THREE.WebGLRenderer();
   renderer.setSize(500, 500);
   document.body.appendChild(renderer.domElement);
-
+  
   // Load Python logo texture
   const textureLoader = new THREE.TextureLoader();
-  const texture = textureLoader.load('path/to/python_logo.png'); // Replace with the actual path to the Python logo image
-  texture.wrapS = THREE.RepeatWrapping;
-  texture.wrapT = THREE.RepeatWrapping;
-  texture.repeat.set(1, 1);
+  const pythonLogoTexture = textureLoader.load('https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png'); // Replace with the actual path to the Python logo image
 
-  const material = new THREE.MeshBasicMaterial({ map: texture });
+  // Set a background color for the transparent areas of the Python logo texture (e.g., white)
+  pythonLogoTexture.background = new THREE.Color(0xffffff);
 
-  // Create cube with Python logo texture
-  const geometry = new THREE.BoxGeometry();
-  const cube = new THREE.Mesh(geometry, material);
-  cube.rotation.x = 0.5; // Initial tilt
-  scene.add(cube);
+  const pythonLogoMaterial = new THREE.MeshBasicMaterial({ map: pythonLogoTexture });
+
+  // Create the first cube with the Python logo texture
+  const cubeGeometry = new THREE.BoxGeometry();
+  const pythonLogoCube = new THREE.Mesh(cubeGeometry, pythonLogoMaterial);
+  pythonLogoCube.rotation.x = 0.5; // Initial tilt
+  pythonLogoCube.position.set(0, 1.4, 0); // Position the cube above the second cube
+  scene.add(pythonLogoCube);
+
+  // Load a different texture from Three.js examples (for the second cube)
+  const javaLogoTexture = textureLoader.load('https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png');
+
+  const javaLogoMaterial = new THREE.MeshBasicMaterial({ map: javaLogoTexture });
+
+  // Create the second cube with a different texture
+  const secondCube = new THREE.Mesh(cubeGeometry, javaLogoMaterial);
+  secondCube.rotation.x = -0.5; // Initial tilt (opposite direction)
+  secondCube.position.set(0, -.6, 0); // Position the cube below the first cube
+  scene.add(secondCube);
+
+  // Load another texture (for the third cube)
+  const thirdCubeTexture = textureLoader.load('https://cdn.icon-icons.com/icons2/195/PNG/256/Blender_23505.png');
+
+  const thirdCubeMaterial = new THREE.MeshBasicMaterial({ map: thirdCubeTexture });
+
+  // Create the third cube with a different texture
+  const thirdCube = new THREE.Mesh(cubeGeometry, thirdCubeMaterial);
+  thirdCube.rotation.x = 0; // No tilt
+  thirdCube.position.set(0, -2.6, 0); // Position the cube at the center
+  scene.add(thirdCube);
 
   // Animation
   const animate = () => {
     requestAnimationFrame(animate);
 
-    // Rotate cube from left to right
-    cube.rotation.y += 0.01;
+    // Rotate all three cubes
+    pythonLogoCube.rotation.y += 0.01;
+    secondCube.rotation.y -= 0.01;
+    thirdCube.rotation.y += 0.01;
 
     renderer.render(scene, camera);
   };
@@ -60,5 +85,73 @@
   animate();
 </script>
 
+  <!-- Box -->
+  <section
+    style="background-color: rgb(17, 176, 12); padding: 20px; border-radius: 20px; margin-top: 20px; width: 25%; margin: 0 auto; padding-bottom: 20px; margin-bottom: 40px;">
+    <h2>Contact Me</h2>
+    <p>
+      Thank you for visiting my website! If you have any questions or would like to get in touch, feel free to reach out
+      to me.
+    </p>
+    <p>
+      Email: your.email@example.com<br>
+      Phone: (123) 456-7890
+    </p>
+  </section>
+  <!-- 3D Cube-->
+  <section>
+    <script type="module">
+      // Your Three.js code goes here
+      import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r125/build/three.module.js';
+
+      // Set up scene
+      const scene = new THREE.Scene();
+
+      // Set up camera
+      const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000); // Aspect ratio set to 1 for a square viewport
+      camera.position.z = 5;
+
+      // Set up renderer
+      const renderer = new THREE.WebGLRenderer();
+      renderer.setSize(100, 100); // Set renderer size to 100x100
+      document.body.appendChild(renderer.domElement);
+
+      // Create cube
+      const geometry = new THREE.BoxGeometry();
+      const material = new THREE.MeshBasicMaterial({ color: 0x00ff00 });
+      const cube = new THREE.Mesh(geometry, material);
+
+      // Add cube to the scene
+      scene.add(cube);
+
+      // Animation
+      const animate = function () {
+        requestAnimationFrame(animate);
+
+        // Rotate the cube
+        cube.rotation.x += 0.01;
+        cube.rotation.y += 0.01;
+
+        renderer.render(scene, camera);
+      };
+
+      // Start the animation loop
+      animate();
+    </script>
+  </section>
+
+    <!-- Box -->
+    <section
+    style="background-color: rgb(17, 176, 12); padding: 20px; border-radius: 20px; margin-top: 20px; width: 25%; margin: 0 auto; padding-bottom: 20px; margin-bottom: 40px;">
+    <h2>Contact Me</h2>
+    <p>
+      Thank you for visiting my website! If you have any questions or would like to get in touch, feel free to reach out
+      to me.
+    </p>
+    <p>
+      Email: your.email@example.com<br>
+      Phone: (123) 456-7890
+    </p>
+  </section>
 </body>
 </html>
