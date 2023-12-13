@@ -13,7 +13,8 @@
   <title>Your Name - Home</title>
   <style>
     .styled-box {
-      background-color: #806989cc; /* Hex color with transparency */
+      background-color: #806989cc;
+      /* Hex color with transparency */
       /* Transparent white background */
       border: 2px solid #22092C;
       /* Border color (blue in this example) */
@@ -52,7 +53,7 @@
     }
 
     img {
-      width: 150px;
+      width: 300px;
       border-radius: 50%;
       margin-right: 20px;
       margin-bottom: 20px;
@@ -178,14 +179,28 @@
       text-decoration: none;
       font-size: 1.2em;
     }
-    .skills-container {
-  width: 100%;
-  text-align: center;
-  padding: 20px; /* Add padding as needed */
-  background-color: #22092C; /* Background color for the skills section */
-}
 
-    
+    .skills-container {
+      text-align: center;
+      padding: 10px;
+      /* Add padding as needed */
+      background-color: #22092C;
+      /* Background color for the skills section */
+    }
+
+    /* Add this CSS code to your stylesheet or in a style block in your HTML file */
+    .footer-links a {
+      color: #22092C;
+      text-decoration: none;
+      font-size: 24px;
+      /* Set the desired font size, e.g., 16px */
+    }
+
+    /* Optional: Change the color when hovering over the links */
+    .footer-links a:hover {
+      color: blue;
+      /* You can change 'blue' to any other color you prefer */
+    }
   </style>
 </head>
 
@@ -198,210 +213,171 @@
     <img src="Carlos.jpg" alt="Carlos Profile Picture">
 
     <div class="styled-box">
-      <p>
-        Hi my name is Carlos. I am currently attending suffolik county community college for my computer science associates degree.
-        I like all things technology, coding, Data analysis
-        SPELL CHECK
-      </p>
+      <p>Hi, my name is Carlos. I am currently attending Suffolk County Community College for my Associate's degree in
+        Computer Science. I like all things technology-related, such as coding, 3D modeling, and data visualization.
+        Ever since I was young, I have always been fascinated by technology and was inspired to learn more — so I did.
+        There is so much to learn and so much potential now, with so many resources available on the internet. Anything
+        is possible if we put our minds to it.</p>
     </div>
 
   </section>
-
-  <section>
-
-
-    <div class="skills">
-      <div class="skill-box">
-        <div class="skill-icon"><i class="fi-xnluxl-java"></i></div>
-        Skill 1
-    </div>
-    <div class="skill-box">
-        <div class="skill-icon"><i class="fi-xnsuxl-python"></i></div>
-        Skill 2
-    </div>
-    <div class="skill-box">
-        <div class="skill-icon"><i class="fi-cnsuxl-cpp"></i></div>
-        Skill 3
-    </div>
-
-      <div class="skill-box">
-        <div class="skill-icon">🗡️</div>
-       BLENDER 3D
-      </div>
-      <div class="skill-box">
-        <div class="skill-icon">🗡️</div>
-        Skill 5
-      </div>
-      <div class="skill-box">
-        <div class="skill-icon">🗡️</div>
-        Skill 6
-      </div>
-
-      <div class="skill-box">
-        <div class="skill-icon">🗡️</div>
-        Skill 7
-      </div>
-      <div class="skill-box">
-        <div class="skill-icon">🗡️</div>
-        Skill 8
-      </div>
-
-      <div class="skill-box">
-        <div class="skill-icon">🗡️</div>
-        Skill 9
-      </div>
-    </div>
-
-  </section>
-
 
   <!-- New HTML Section -->
-  <section>
-    <h2>New Section</h2>
-    <p>This is a new section you added. You can put your content here.</p>
+  <section style="padding: 5px;">
+    <h1>My Skills </h1> <i class="fi-xwluxl-star-wide" style="font-size: 48px;"></i>
   </section>
 
-  <!-- Box -->
-  <section
-    style="background-color: rgb(17, 176, 12); padding: 20px; border-radius: 20px; margin-top: 20px; width: 25%; margin: 0 auto; padding-bottom: 20px; margin-bottom: 40px;">
-    <h2>Contact Me</h2>
-    <p>
-      Thank you for visiting my website! If you have any questions or would like to get in touch, feel free to reach out
-      to me.
-    </p>
-    <p>
-      Email: your.email@example.com<br>
-      Phone: (123) 456-7890
-    </p>
-  </section>
-<!-- Skills -->
-<section>
-  <div class="skills-container">
-    <div class="content">
-      <div class="text-container">
-        <p>This is a placeholder paragraph of text on the left side of the screen. You can replace this with your own content.</p>
-      </div>
+  <!-- Skills -->
+  <section style="padding: 5px;">
+    <div class="skills-container">
+      <div class="content">
+        <div class="styled-box">
+          <p style="font-size: 20px;">My journey in the world of technology has been enriched by my proficiency in Java,
+            Python, and Blender 3D. Throughout my academic years, I honed my Java skills, thanks to my dedicated
+            coursework and classroom experiences. This journey allowed me to delve deep into data structures and
+            undertake various projects, showcasing my ability to apply these concepts effectively.<br><br>
 
-      <div class="box-container">
-        <script type="module">
-          import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r127/build/three.module.js';
+            My exploration extended to the realm of Python during my time at Brookhaven National Lab, where I applied my
+            knowledge to perform data analytics on gene data for the Low Dose Radiation Biology Project. Leveraging the
+            lab's cutting-edge high-performance computers, I was able to push the boundaries of my research, making
+            significant contributions to the project.<br><br>
 
-          // Create scene with white background
-          const scene = new THREE.Scene();
-          scene.background = new THREE.Color(0xAffffA);
+            In parallel, my passion for 3D modeling led me to learn Blender 3D, initially as a hobby. However, I soon
+            realized its potential for more profound applications. At Suffolk, my teachers recognized this potential and
+            encouraged me to use Blender's built-in physics engine. This led to the creation of simulations involving
+            simple crater collisions using Blender's fluid simulation capabilities.<br><br>
 
-          // Create camera
-          const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
-          camera.position.z = 5;
-          camera.position.y = 0; // Adjust the Y-coordinate to shift the perspective up
+            What excites me the most about these skills is that they are not only powerful but also accessible to anyone
+            willing to explore. All these remarkable tools are freely available online, offering boundless opportunities
+            for creativity and innovation. There are no barriers to trying out extraordinary endeavors and bringing
+            ideas to life.
+          </p>
+        </div>
 
-          // Create renderer
-          const renderer = new THREE.WebGLRenderer();
-          renderer.setSize(500, 500);
-          document.querySelector('.box-container').appendChild(renderer.domElement);
+        <div class="box-container" style="padding: 5px;">
+          <script type="module">
+            import * as THREE from 'https://threejsfundamentals.org/threejs/resources/threejs/r127/build/three.module.js';
 
-          // Load Python logo texture
-          const textureLoader = new THREE.TextureLoader();
-          const pythonLogoTexture = textureLoader.load('https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png'); // Replace with the actual path to the Python logo image
+            // Create scene with white background
+            const scene = new THREE.Scene();
+            scene.background = new THREE.Color(0x22092C); // change this color to see background
 
-          // Set a background color for the transparent areas of the Python logo texture (e.g., white)
-          pythonLogoTexture.background = new THREE.Color(0xffffff);
+            // Create camera
+            const camera = new THREE.PerspectiveCamera(75, 1, 0.1, 1000);
+            camera.position.z = 5;
+            camera.position.y = 0; // Adjust the Y-coordinate to shift the perspective up
 
-          const pythonLogoMaterial = new THREE.MeshBasicMaterial({ map: pythonLogoTexture });
+            // Create renderer
+            const renderer = new THREE.WebGLRenderer();
+            renderer.setSize(700, 800);
+            document.querySelector('.box-container').appendChild(renderer.domElement);
 
-          // Create the first cube with the Python logo texture
-          const cubeGeometry = new THREE.BoxGeometry();
-          const pythonLogoCube = new THREE.Mesh(cubeGeometry, pythonLogoMaterial);
-          pythonLogoCube.rotation.x = 0.5; // Initial tilt
-          pythonLogoCube.position.set(0, 0, 0); // Position the cube at the center
-          scene.add(pythonLogoCube);
+            // Load Python logo texture
+            const textureLoader = new THREE.TextureLoader();
+            const pythonLogoTexture = textureLoader.load('https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/267_Python_logo-512.png'); // Replace with the actual path to the Python logo image
 
-          // Load textures for the other two cubes
-          const javaLogoTexture = textureLoader.load('https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png');
-          const blenderLogoTexture = textureLoader.load('https://cdn.icon-icons.com/icons2/195/PNG/256/Blender_23505.png');
+            // Set a background color for the transparent areas of the Python logo texture (e.g., white)
+            pythonLogoTexture.background = new THREE.Color(0xffffff);
 
-          const javaLogoMaterial = new THREE.MeshBasicMaterial({ map: javaLogoTexture });
-          const blenderLogoMaterial = new THREE.MeshBasicMaterial({ map: blenderLogoTexture });
+            const pythonLogoMaterial = new THREE.MeshBasicMaterial({ map: pythonLogoTexture });
 
-          // Create the second cube with Java logo texture
-          const secondCube = new THREE.Mesh(cubeGeometry, javaLogoMaterial);
-          secondCube.rotation.x = -0.5; // Initial tilt (opposite direction)
-          secondCube.position.set(0, -1.6, 0); // Position the cube below the first cube
-          scene.add(secondCube);
+            // Create the first cube with the Python logo texture
+            const cubeGeometry = new THREE.BoxGeometry();
+            const pythonLogoCube = new THREE.Mesh(cubeGeometry, pythonLogoMaterial);
+            pythonLogoCube.rotation.x = 0.7; // Initial tilt
+            pythonLogoCube.position.set(0, 2.5, 0); // Position the cube at the center
+            scene.add(pythonLogoCube);
+            // Scale the cube to make it bigger
+            const scaleFactor = 1.5; // Adjust the scale factor as needed
+            pythonLogoCube.scale.set(scaleFactor, scaleFactor, scaleFactor);
 
-          // Create the third cube with Blender logo texture
-          const thirdCube = new THREE.Mesh(cubeGeometry, blenderLogoMaterial);
-          thirdCube.rotation.x = 0; // No tilt
-          thirdCube.position.set(0, -3.6, 0); // Position the cube at the bottom
-          scene.add(thirdCube);
+            // Load textures for the other two cubes
+            const javaLogoTexture = textureLoader.load('https://cdn4.iconfinder.com/data/icons/logos-and-brands/512/181_Java_logo_logos-512.png');
+            const blenderLogoTexture = textureLoader.load('https://cdn.icon-icons.com/icons2/195/PNG/256/Blender_23505.png');
 
-          // Animation
-          const animate = () => {
-            requestAnimationFrame(animate);
+            const javaLogoMaterial = new THREE.MeshBasicMaterial({ map: javaLogoTexture });
+            const blenderLogoMaterial = new THREE.MeshBasicMaterial({ map: blenderLogoTexture });
 
-            // Rotate all three cubes
-            pythonLogoCube.rotation.y += 0.01;
-            secondCube.rotation.y -= 0.01;
-            thirdCube.rotation.y += 0.01;
+            // Create the second cube with Java logo texture
+            const secondCube = new THREE.Mesh(cubeGeometry, javaLogoMaterial);
+            secondCube.rotation.x = -0.5; // Initial tilt (opposite direction)
+            secondCube.position.set(0, 0, 0); // Position the cube below the first cube
+            scene.add(secondCube);
+            secondCube.scale.set(scaleFactor, scaleFactor, scaleFactor);
 
-            renderer.render(scene, camera);
-          };
+            // Create the third cube with Blender logo texture
+            const thirdCube = new THREE.Mesh(cubeGeometry, blenderLogoMaterial);
+            thirdCube.rotation.x = 0; // No tilt
+            thirdCube.position.set(0, -2.2, 0); // Position the cube at the bottom
+            scene.add(thirdCube);
+            thirdCube.scale.set(scaleFactor, scaleFactor, scaleFactor);
 
-          animate();
-        </script>
+            // Animation
+            const animate = () => {
+              requestAnimationFrame(animate);
+
+              // Rotate all three cubes
+              pythonLogoCube.rotation.y += 0.01;
+              secondCube.rotation.y -= 0.01;
+              thirdCube.rotation.y += 0.01;
+
+              renderer.render(scene, camera);
+            };
+
+            animate();
+          </script>
+        </div>
       </div>
     </div>
-  </div>
-</section>
-
-
-<style>
-  .content {
-    display: flex;
-    align-items: center;
-  }
-
-  .text-container {
-    flex: 1;
-    padding: 20px;
-  }
-
-  .box-container {
-    flex: 1;
-    display: flex;
-    justify-content: flex-end;
-    align-items: center;
-  }
-</style>
-
-
-
-  <!-- Projects-->
-  <section
-    style="background-color: rgb(17, 176, 12); padding: 20px; border-radius: 20px; margin-top: 20px; width: 25%; margin: 0 auto; padding-bottom: 20px; margin-bottom: 40px;">
-    <h2>Projects</h2>
-    <p>
-      talk about projects here
-    </p>
-    <p>
-      Email: your.email@example.com<br>
-      Phone: (123) 456-7890
-    </p>
   </section>
 
+
+  <style>
+    .content {
+      display: flex;
+      align-items: center;
+    }
+
+    .text-container {
+      flex: 1;
+      padding: 20px;
+    }
+
+    .box-container {
+      flex: 1;
+      display: flex;
+      justify-content: flex-end;
+      align-items: center;
+    }
+  </style>
+
+  <!-- Box -->
+  <section>
+    <div class="styled-box">
+      <p>
+        Other skills I have are SQL, C++, MIPS, Web Devlopment
+      </p>
+    </div>
+  </section>
+
+  <!-- Projects-->
   <section style="width: 50%; margin: auto; text-align: center; display: flex;">
 
     <!-- First Set (Left) -->
     <div style="flex: 1; background-color: #650707; padding: 20px; border-radius: 20px 20px 0 0; position: relative;">
-        <div style="text-align: center; overflow: hidden;">
-            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 50%; background-color: #650707; border-radius: 20px 20px 0 0;"></div>
-            <img src="PlaceHolder.jfif" alt="Image Description" style="max-width: 100%; height: auto; position: relative; z-index: 1; border-radius: 20px 20px 0 0;">
+      <div style="text-align: center; overflow: hidden;">
+        <div
+          style="position: absolute; top: 0; left: 0; right: 0; bottom: 50%; background-color: #650707; border-radius: 20px 20px 0 0;">
         </div>
+        <img src="CraterProjHead.png" alt="Image Description"
+          style="max-width: 100%; height: 200px; position: relative; z-index: 1; border-radius: 20px 20px 0 0;">
+      </div>
 
-        <div style="padding: 20px;">
-            <h2 style="color: white;">Blender Project</h2>
-            <p style="color: white;">Make photo take up the entire top of the box so the top photo touches the top of the box.</p>
-        </div>
+      <div style="padding: 20px;">
+        <h2 style="color: white;">Crater Project</h2>
+        <p style="color: white;">3D simulation of Impact Craters using Blender to help students visualize how they would
+          look.</p>
+      </div>
     </div>
 
     <!-- Space between sections -->
@@ -409,80 +385,111 @@
 
     <!-- Second Set (Right) -->
     <div style="flex: 1; background-color: #650707; padding: 20px; border-radius: 20px 20px 0 0; position: relative;">
-        <div style="text-align: center; overflow: hidden;">
-            <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 50%; background-color: #650707; border-radius: 20px 20px 0 0;"></div>
-            <img src="PlaceHolder.jfif" alt="Image Description" style="max-width: 100%; height: auto; position: relative; z-index: 1; border-radius: 20px 20px 0 0;">
+      <div style="text-align: center; overflow: hidden;">
+        <div
+          style="position: absolute; top: 0; left: 0; right: 0; bottom: 50%; background-color: #650707; border-radius: 20px 20px 0 0;">
         </div>
+        <img src="BNLGeneHead.png" alt="Image Description"
+          style="max-width: 100%; height: 200px; position: relative; z-index: 1; border-radius: 20px 20px 0 0;">
+      </div>
 
-        <div style="padding: 20px;">
-            <h2 style="color: white;">crater, bnl, social media, class assigner</h2>
-            <p style="color: white;">Make photo take up the entire top of the box so the top photo touches the top of the box.</p>
-        </div>
+      <div style="padding: 20px;">
+        <h2 style="color: white;">Low Dose Radiation Biology Project</h2>
+        <p style="color: white;">Data analytics on gene data from ArrayExpress and GEO site to determine cell type and
+          any ailment using Python Jupyter Notebook</p>
+      </div>
     </div>
-</section>
+  </section>
 
-<!-- Pt2 projects-->
-<section style="width: 50%; margin: auto; text-align: center; display: flex;">
 
-  <!-- First Set (Left) -->
-  <div style="flex: 1; background-color: #650707; padding: 20px; border-radius: 20px 20px 0 0; position: relative;">
+
+  <!-- Pt2 projects-->
+
+  <section style="width: 50%; margin: auto; text-align: center; display: flex;">
+
+    <!-- First Set (Left) -->
+    <div style="flex: 1; background-color: #650707; padding: 20px; border-radius: 20px 20px 0 0; position: relative;">
       <div style="text-align: center; overflow: hidden;">
-          <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 50%; background-color: #650707; border-radius: 20px 20px 0 0;"></div>
-          <img src="PlaceHolder.jfif" alt="Image Description" style="max-width: 100%; height: auto; position: relative; z-index: 1; border-radius: 20px 20px 0 0;">
+        <div
+          style="position: absolute; top: 0; left: 0; right: 0; bottom: 50%; background-color: #650707; border-radius: 20px 20px 0 0;">
+        </div>
+        <img src="ClassAssignProjHead.png" alt="Image Description"
+          style="max-width: 100%; height: 200px; position: relative; z-index: 1; border-radius: 20px 20px 0 0;">
       </div>
 
       <div style="padding: 20px;">
-          <h2 style="color: white;">Blender Project</h2>
-          <p style="color: white;">Make photo take up the entire top of the box so the top photo touches the top of the box.</p>
+        <h2 style="color: white;">Class Assigner</h2>
+        <p style="color: white;">Using Java to parse data into a useable object and make recommendations of classes
+          based on schedule availabilityma</p>
       </div>
-  </div>
+    </div>
 
-  <!-- Space between sections -->
-  <div style="width: 40px;"></div>
+    <!-- Space between sections -->
+    <div style="width: 40px;"></div>
 
-  <!-- Second Set (Right) -->
-  <div style="flex: 1; background-color: #650707; padding: 20px; border-radius: 20px 20px 0 0; position: relative;">
+    <!-- Second Set (Right) -->
+    <div style="flex: 1; background-color: #650707; padding: 20px; border-radius: 20px 20px 0 0; position: relative;">
       <div style="text-align: center; overflow: hidden;">
-          <div style="position: absolute; top: 0; left: 0; right: 0; bottom: 50%; background-color: #650707; border-radius: 20px 20px 0 0;"></div>
-          <img src="PlaceHolder.jfif" alt="Image Description" style="max-width: 100%; height: auto; position: relative; z-index: 1; border-radius: 20px 20px 0 0;">
+        <div
+          style="position: absolute; top: 0; left: 0; right: 0; bottom: 50%; background-color: #650707; border-radius: 20px 20px 0 0;">
+        </div>
+        <img src="SocialMediaProjHead.png" alt="Image Description"
+          style="max-width: 100%; height: 200px; position: relative; z-index: 1; border-radius: 20px 20px 0 0;">
       </div>
 
       <div style="padding: 20px;">
-          <h2 style="color: white;">crater, bnl, social media, class assigner</h2>
-          <p style="color: white;">Make photo take up the entire top of the box so the top photo touches the top of the box.</p>
+        <h2 style="color: white;">Social Media</h2>
+        <p style="color: white;">Practicing efficent data structures by imitating how a website would work using Java.
+        </p>
       </div>
-  </div>
-</section>
+    </div>
+  </section>
+
+
+  <!-- Check below! -->
+  <section>
+    <div class="styled-box" style="font-size: 20px; width: 580px;">
+      <p style="white-space: nowrap;">
+        <i class="fi-xwsdxl-chevron-wide"></i> Check out my projects and social media below! <i
+          class="fi-xwsdxl-chevron-wide"></i>
+      </p>
+    </div>
+  </section>
+
 
   <!-- Footer -->
   <footer>
     <div class="footer-container">
       <div class="footer-column">
-        <h2>Column 1</h2>
         <ul class="footer-links">
-          <li><a href="#">Link 1</a></li>
-          <li><a href="#">Link 2</a></li>
-          <li><a href="#">Add friconix link</a></li>
+          <li><a href="https://www.linkedin.com/in/carlos-deleon-0615b61b0/">LinkedIn </a><i class="fi-snsuxl-linkedin"
+              style="font-size: 24px; color: black;"></i></li>
+          <li><a href="https://github.com/CodingCarlos23?tab=repositories">GitHub </a><i class="fi-snsuxl-github-alt"
+              style="font-size: 24px; color: black;"></i></li>
+          <li><a href="https://www.behance.net/codingcarlos">Behance </a> <i class="fi-snsuxl-behance"
+              style="font-size: 24px; color: black;"></i></li>
         </ul>
       </div>
       <div class="footer-column">
-        <h2>Column 2</h2>
         <ul class="footer-links">
-          <li><a href="#">Link 4</a></li>
-          <li><a href="#">Link 5</a></li>
-          <li><a href="#">Link 6</a></li>
+          <li><a href="Gene.html">LD-RadBio Project</a></li>
+          <li><a href="Crater.html">Crater Project</a></li>
         </ul>
       </div>
       <div class="footer-column">
-        <h2>Column 3</h2>
-        <div class="footer-social">
-          <a href="#" target="_blank">Facebook</a>
-          <a href="#" target="_blank">Twitter</a>
-          <a href="#" target="_blank">Instagram</a>
-        </div>
+        <ul class="footer-links">
+          <li><a href="index.html">Home </a> <i class="fi-xnsuxl-house-solid"
+              style="font-size: 24px; color: black;"></i></li>
+          <li><a href="https://friconix.com/"> Friconix </a></li>
+        </ul>
       </div>
     </div>
+
+    <div>
+      <p class="footer-copyright" style="text-align: center; padding-left: 400px;">&copy; 2023 CodingCarlos </p>
+    </div>
   </footer>
+
 
   <!-- Include your JavaScript scripts or links to external scripts here -->
 
